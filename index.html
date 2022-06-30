@@ -35,7 +35,7 @@
                         <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)">{{ variant.color }}</div>
                         <button class="button" @click="addToCart">Add to Cart</button>
                         <br>
-                        <button class="button" @click="changeStatus">Change</button>
+                        <button class="button" @click="changeStatus">Swap Status</button>
                         <ul>
                             <li v-for="size in sizes">{{ size }}</li>
                         </ul>
