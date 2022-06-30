@@ -36,9 +36,7 @@
                         <button class="button" @click="addToCart">Add to Cart</button>
                         <br>
                         <button class="button" @click="changeStatus">Swap Status</button>
-                        <ul>
-                            <li v-for="size in sizes">{{ size }}</li>
-                        </ul>
+                        <p> {{size}}</p>
                         <!-- onSale or not  -->
                         <br>
                         <p v-if="inventory > 50">onSale</p>
