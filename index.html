@@ -13,8 +13,26 @@
 <body>
     <div id="app">
         <h1>Product goes here</h1>
-        <h1>{{product}}</h1>
-        <h4>{{description}}</h4>
+        <div class="nav-bar"></div>
+
+        <div class="product-display">
+            <div calss="product-container">
+                <div class="product-image">
+                    <!--image goes here-->
+                    <img src="image">
+                    <img v-bind:src="image">
+                    <img :src="image">
+                </div>
+                <div class="product-info">
+                    <!-- link goes here -->
+                    <a href="link">
+                    <a v-bind:href="link">
+                    <a :href="link">
+                    <h1>{{ product }}</h1>
+                </div>
+            </div>
+        </div>
+        <!-- <h4>{{description}}</h4> -->
     </div>
 
     <!-- Import Js -->
