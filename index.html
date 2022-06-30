@@ -24,11 +24,18 @@
                     <img :src="image">
                 </div>
                 <div class="product-info">
-                    <!-- link goes here -->
-                    <a href="link">
-                    <a v-bind:href="link">
-                    <a :href="link">
-                    <h1>{{ product }}</h1>
+                    <!-- checkpoint3 -->
+                        <h1> <a v-bind:href="link">{{ product }}</a></h1>
+                        <p>In Stock</p>
+                        <p>Out of Stock</p>
+                        <p v-if="inventory > 10">In Stock</p>
+                        <p v-else-if="inventory <= 10 && inventory > 0">In Stock</p>
+                        <p v-else>Out of Stock</p>
+                        <!-- onSale or not  -->
+                        <br>
+                        <p v-if="inventory > 50">onSale</p>
+                        <p v-else>not for sale</p>
+            
                 </div>
             </div>
         </div>

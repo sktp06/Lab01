@@ -5,7 +5,13 @@ const app = Vue.createApp({
             product: 'Boots',
             description: 'A boot is a type of footwear. Some boots extend up the leg, sometimes as far as the knee or even the hip.',
             image: './assets/images/socks_green.jpg',
-            link: 'http://www.camt.cmu.ac.th'
+            link: 'http://www.camt.cmu.ac.th',
+            
+            product: 'Shoes',
+            image: './assets/images/socks_green.jpg',
+            inStock: true,
+            inventory: 100,
+            onSale: true
         }
     }
 })
