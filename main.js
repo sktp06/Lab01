@@ -16,7 +16,7 @@ const app = Vue.createApp({
                 { id: 2234, color: 'green', image:'./assets/images/socks_green.jpg' },
                 { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' }
             ],
-            size: ['Size = S,M,L'],
+            sizes:['S','M','L'],
             onSale: true,
             cart: 0, 
         }
@@ -34,6 +34,13 @@ const app = Vue.createApp({
                 this.inventory=0;
             } else {
                 this.inventory=100;
+            }
+
+            console.log(this.onSale);
+            if (this.onSale==true){
+                this.onSale=false;
+            } else {
+                this.onSale=true;
             }
 
         }
